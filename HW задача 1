@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int reverse (int start)
+{
+    int a = 0;
+    int obr = 0;
+    while (start > 0)
+    { 
+        a = start % 10;
+        start = start / 10;
+        obr = obr * 10 + a;
+    }
+    return obr;
+}
+
+int main()
+{
+    int x;
+    cout<<"Ведите число" << endl;
+    cin >> x;
+    cout << reverse (x);
+
+    return 0;
+}
