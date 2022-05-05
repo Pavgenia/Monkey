@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main () {
+  int n;
+  int m;
+  int p;
+  cout << "Введите сначала первое число, затем нажмите Enter и введите второе число после дроби:" << endl;
+  cin >> n;
+  cout << "/" << endl;
+  cin >> m;
+  try {
+    int p = n / m;
+    cout << p;
+    }
+  catch (...) {
+    cout << "Неверно";
+    }
+  }
