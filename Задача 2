@@ -1,3 +1,5 @@
+#include <iostream>
+using namespace std;
 int log(string login) { 
  int time = 0; 
  string supposedpassword; 
